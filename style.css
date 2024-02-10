@@ -1,19 +1,4 @@
-/* Обновленные стили для мобильных устройств */
-@media only screen and (max-width: 600px) {
-    .bio-container {
-        align-items: flex-start; /* Выравниваем контент вверх */
-        background: linear-gradient(#ffecd2, #fcb69f); /* Градиентный фон */
-    }
 
-    .avatar-container {
-        display: none; /* Скрываем аватар на мобильных устройствах */
-    }
-
-    .bio-details {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
 
 /* Обновленные стили для увеличения интерфейса */
 .bio-container {
@@ -79,3 +64,18 @@
     background-color: #ff4f4f;
 }
 
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        align-items: flex-start; /* Выравниваем контент вверх */
+        background: linear-gradient(#ffecd2, #fcb69f); /* Градиентный фон */
+    }
+
+    .avatar-container {
+        display: none; /* Скрываем аватар на мобильных устройствах */
+    }
+
+    .bio-details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
