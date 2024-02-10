@@ -1,0 +1,62 @@
+.bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ffecd2, #fcb69f);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh;
+}
+.avatar-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-details {
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.bio-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Расположение по вертикали */
+    align-items: center; /* Выравнивание по центру */
+    justify-content: center; /* Выравнивание по центру */
+    margin-top: 20px;
+}
+
+.button, .random-color-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 10px 0; /* Отступы между кнопками */
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, .random-color-button:hover {
+    background-color: #ff4f4f;
+}
