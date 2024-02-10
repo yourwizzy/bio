@@ -1,19 +1,15 @@
-
-
-/* Обновленные стили для увеличения интерфейса */
 .bio-container {
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(#ffecd2, #fcb69f);
-    padding: 40px; /* Увеличиваем внутренний отступ */
+    padding: 20px;
     border-radius: 10px;
-    height: 100vh;
 }
 
 .avatar-container {
-    width: 200px; /* Увеличиваем размер аватара */
-    height: 200px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -31,12 +27,12 @@
 }
 
 .bio-details h2 {
-    font-size: 28px; /* Увеличиваем размер заголовка */
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .bio-details p {
-    font-size: 18px; /* Увеличиваем размер текста */
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -44,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px; /* Увеличиваем отступ между кнопками и другими элементами */
+    margin-top: 20px;
 }
 
 .button, .random-color-button {
@@ -52,10 +48,10 @@
     color: #fff;
     border: none;
     border-radius: 30px;
-    padding: 20px 40px; /* Увеличиваем отступы кнопок */
-    margin: 10px 0; /* Увеличиваем отступы между кнопками */
+    padding: 15px 30px;
+    margin: 10px 0;
     text-decoration: none;
-    font-size: 18px; /* Увеличиваем размер шрифта */
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -64,4 +60,23 @@
     background-color: #ff4f4f;
 }
 
+@media only screen and (max-width: 600px) {
+    .avatar-container {
+        width: 80px;
+        height: 80px;
+    }
 
+    .bio-details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    .button, .random-color-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
