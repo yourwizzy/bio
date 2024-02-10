@@ -12,12 +12,12 @@ var bioContainer = document.querySelector('.bio-container');
 var colorChangeInterval;
 
 randomColorButton.addEventListener('click', function() {
-    clearInterval(colorChangeInterval); // Очистим предыдущий интервал, если есть
+    clearInterval(colorChangeInterval);
 
     var startColor = getRandomColor();
     var endColor = getRandomColor();
     var currentColor = startColor;
-    var steps = 50; // Количество шагов анимации
+    var steps = 50;
     var stepCount = 0;
 
     colorChangeInterval = setInterval(function() {
@@ -30,15 +30,7 @@ randomColorButton.addEventListener('click', function() {
         var g = Math.round(parseInt(startColor.substring(3, 5), 16) + (gStep * stepCount));
         var b = Math.round(parseInt(startColor.substring(5, 7), 16) + (bStep * stepCount));
 
-        currentColor = '#' + (r < 16 ? '0' : '') + r.toString(16) + (g < 16 ? '0' : '') + g.toString(16) + (b < 16 ? '0' : '') + b.toString(16);
+        currentColor = '#' + (r < 16 ? '0' : '') + r
 
-        bioContainer.style.background = 'linear-gradient(' + startColor + ',' + currentColor + ')';
-
-        if (stepCount >= steps) {
-            clearInterval(colorChangeInterval);
-            bioContainer.style.background = 'linear-gradient(' + startColor + ',' + endColor + ')';
-        }
-    }, 10); // Изменяем цвет каждые 10 миллисекунд
-});
 
 
