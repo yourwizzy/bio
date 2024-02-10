@@ -5,12 +5,11 @@
     background: linear-gradient(#ffecd2, #fcb69f);
     padding: 20px;
     border-radius: 10px;
-    height: 100vh;
 }
 
 .avatar-container {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -22,7 +21,7 @@
 }
 
 .bio-details {
-    margin: 20px;
+    margin-left: 20px;
     color: #fff;
     text-align: center;
 }
@@ -68,11 +67,12 @@
     }
 
     .bio-details {
-        margin: 10px;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .buttons {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .button, .random-color-button {
