@@ -7,9 +7,10 @@
     border-radius: 10px;
     height: 100vh;
 }
+
 .avatar-container {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -21,7 +22,7 @@
 }
 
 .bio-details {
-    margin-left: 20px;
+    margin: 20px;
     color: #fff;
     text-align: center;
 }
@@ -38,9 +39,8 @@
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Расположение по вертикали */
-    align-items: center; /* Выравнивание по центру */
-    justify-content: center; /* Выравнивание по центру */
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -50,7 +50,7 @@
     border: none;
     border-radius: 30px;
     padding: 15px 30px;
-    margin: 10px 0; /* Отступы между кнопками */
+    margin: 10px 0;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -60,3 +60,24 @@
 .button:hover, .random-color-button:hover {
     background-color: #ff4f4f;
 }
+
+@media only screen and (max-width: 600px) {
+    .avatar-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bio-details {
+        margin: 10px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+
+    .button, .random-color-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
