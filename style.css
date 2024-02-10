@@ -6,12 +6,7 @@
     padding: 20px;
     border-radius: 10px;
 }
-@media only screen and (max-width: 600px) {
-    .button, .random-color-button {
-        padding: 20px 40px; /* Увеличиваем отступы в пикселях */
-        font-size: 18px; /* Увеличиваем размер шрифта */
-    }
-}
+
 .avatar-container {
     width: 150px;
     height: 150px;
