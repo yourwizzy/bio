@@ -7,12 +7,7 @@
     border-radius: 10px;
     height: 100vh;
 }
-.avatar-container {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 20%;
-}
+
 
 .avatar-container img {
     width: 100%;
